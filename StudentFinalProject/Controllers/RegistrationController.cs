@@ -10,7 +10,7 @@ using StudentFinalProject.Models;
 
 namespace StudentFinalProject.Controllers
 {
-    [Authorize]
+    
     public class RegistrationController : Controller
     {
         private firstEntities db = new firstEntities();
@@ -38,6 +38,7 @@ namespace StudentFinalProject.Controllers
         }
 
         // GET: Registration/Create
+        [Authorize]
         public ActionResult Create()
         {
             ViewBag.batch_id = new SelectList(db.batches, "id", "batch1");

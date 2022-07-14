@@ -4,11 +4,11 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Registered Studemts</h2>
 
-<p>
+@*<p>
     @Html.ActionLink("Create New", "Create")
-</p>
+</p>*@
 <table class="table">
     <tr>
         <th>
@@ -23,9 +23,9 @@
         <th>
             @Html.DisplayNameFor(model => model.telno)
         </th>
-        <th>
+        @*<th>
             @Html.DisplayNameFor(model => model.batch.batch1)
-        </th>
+        </th>*@
         <th>
             @Html.DisplayNameFor(model => model.course.course1)
         </th>
@@ -46,17 +46,17 @@
         <td>
             @Html.DisplayFor(modelItem => item.telno)
         </td>
-        <td>
+        @*<td>
             @Html.DisplayFor(modelItem => item.batch.batch1)
-        </td>
+        </td>*@
         <td>
             @Html.DisplayFor(modelItem => item.course.course1)
         </td>
-        <td>
+        @*<td>
             @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
             @Html.ActionLink("Details", "Details", new { id=item.id }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.id })
-        </td>
+        </td>*@
     </tr>
 }
 

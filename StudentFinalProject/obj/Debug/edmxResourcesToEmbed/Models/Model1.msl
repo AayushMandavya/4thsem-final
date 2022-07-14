@@ -43,5 +43,25 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="teachers">
+      <EntityTypeMapping TypeName="firstModel.teacher">
+        <MappingFragment StoreEntitySet="teacher">
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="subject" ColumnName="subject" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="teacher1">
+      <EntityTypeMapping TypeName="firstModel.teacher1">
+        <MappingFragment StoreEntitySet="teacher1">
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="course" ColumnName="course" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
