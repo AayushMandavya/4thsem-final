@@ -1,0 +1,14 @@
+﻿@model IEnumerable<StudentFinalProject.Models.course>
+@{
+    ViewBag.Title = "Display";
+}
+
+<h1>Courses</h1>
+
+<br />
+<br />
+@foreach (var item in Model)
+{
+    <h3>@Html.DisplayFor(modelItem => item.course1)    --  @Html.DisplayFor(modelItem => item.duration) years</h3>
+
+}

@@ -19,6 +19,10 @@ namespace StudentFinalProject.Controllers
         {
             return View(db.teachers.ToList());
         }
+        public ActionResult Display()
+        {
+            return View(db.teachers.ToList());
+        }
 
         public ActionResult AddImage()
         {

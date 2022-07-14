@@ -6,10 +6,10 @@
 
 <h2>Courses</h2>
 
-@*<p>
+<p>
         @Html.ActionLink("Create New", "Create")
-    </p>*@
-@*<table class="table">
+    </p>
+<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.course1)
@@ -18,9 +18,9 @@
             @Html.DisplayNameFor(model => model.duration)
         </th>
         <th></th>
-    </tr>*@
+    </tr>
 
-@*@foreach (var item in Model) {
+@foreach (var item in Model) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.course1)
@@ -36,13 +36,6 @@
         </tr>
     }
 
-    </table>*@
+    </table>
 
 
-<br />
-<br />
-@foreach (var item in Model)
-{
-    <h3>@Html.DisplayFor(modelItem => item.course1)    --  @Html.DisplayFor(modelItem => item.duration) years</h3>
-
-}

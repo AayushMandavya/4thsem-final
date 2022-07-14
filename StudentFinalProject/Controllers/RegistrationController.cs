@@ -22,6 +22,12 @@ namespace StudentFinalProject.Controllers
             return View(registrations.ToList());
         }
 
+        public ActionResult Display()
+        {
+            var registrations = db.registrations.Include(r => r.batch).Include(r => r.course);
+            return View(registrations.ToList());
+        }
+
         // GET: Registration/Details/5
         public ActionResult Details(int? id)
         {

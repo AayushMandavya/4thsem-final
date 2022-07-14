@@ -20,6 +20,11 @@ namespace StudentFinalProject.Controllers
             return View(db.courses.ToList());
         }
 
+        public ActionResult Display()
+        {
+            return View(db.courses.ToList());
+        }
+
         // GET: Course/Details/5
         public ActionResult Details(int? id)
         {
