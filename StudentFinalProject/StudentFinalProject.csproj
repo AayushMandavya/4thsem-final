@@ -208,8 +208,12 @@
     <Content Include="Content\Assets\img\course-4.jpg" />
     <Content Include="Content\Assets\img\course-5.jpg" />
     <Content Include="Content\Assets\img\course-6.jpg" />
+    <Content Include="Content\Assets\img\images.png" />
     <Content Include="Content\Assets\img\page-header.jpg" />
+    <Content Include="Content\Assets\img\pranit.jpg" />
+    <Content Include="Content\Assets\img\rahul.jpg" />
     <Content Include="Content\Assets\img\registration.jpg" />
+    <Content Include="Content\Assets\img\rojan.jpg" />
     <Content Include="Content\Assets\img\team-1.jpg" />
     <Content Include="Content\Assets\img\team-2.jpg" />
     <Content Include="Content\Assets\img\team-3.jpg" />

@@ -44,7 +44,7 @@ namespace StudentFinalProject.Controllers
         }
 
         // GET: Registration/Create
-        [Authorize]
+        
         public ActionResult Create()
         {
             ViewBag.batch_id = new SelectList(db.batches, "id", "batch1");
@@ -63,7 +63,7 @@ namespace StudentFinalProject.Controllers
             {
                 db.registrations.Add(registration);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Display");
             }
 
             ViewBag.batch_id = new SelectList(db.batches, "id", "batch1", registration.batch_id);
@@ -72,6 +72,7 @@ namespace StudentFinalProject.Controllers
         }
 
         // GET: Registration/Edit/5
+        [Authorize]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -107,6 +108,7 @@ namespace StudentFinalProject.Controllers
         }
 
         // GET: Registration/Delete/5
+        [Authorize]
         public ActionResult Delete(int? id)
         {
             if (id == null)
